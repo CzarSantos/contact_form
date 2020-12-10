@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+</head>
+<body>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+        }
+        .contato{
+            width: 100%;
+            max-width: 500px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+        }
+        .field{
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid black;
+            border-radius:  5px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        textarea{
+            height: 150px;
+        }
+        .buto{
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            border: 0;
+            border-radius: 30px;
+            font-size: 14px;
+        }
+   
+    </style>
+
+    <section class="content">
+        <div class="contato">
+            <h3>Formulário de contato</h3>
+            <form class="form" method="POST" action="./email.php"><!-- chama PHP externo -->
+                <input class="field" name="name" placeholder="Nome">
+                <input class="field" name="email" placeholder="E-mail">
+                <textarea class="field" name="message" placeholder="Digite sua mensagem aqui."></textarea>
+                <input class="buto" type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </section>
+    
+</body>
+</html>
